@@ -14,9 +14,7 @@
 
 Примеры:
 
-["Hello", "2", "world", ":-)"] > ["2", ":-)"]
-['1234", "1567", "-2", "computer science"] -> ["-2"]
-['Russia", "Denmark", "Kazan"] -> []
+
 
 */
 
@@ -29,6 +27,7 @@ internal class Program
         string[] arr = new string[] {"Люк","Скайуокер","Пол","Уокер","Кот","Матроскин"};    //Завели массив
 
         Console.Write($"{'['}");
+
         for (int i = 0; i < arr.Length; i++)
         {
             if (arr[i].Length <= 3)
@@ -36,6 +35,7 @@ internal class Program
                 Console.Write($"{'"'}{arr[i]}{'"'} ");
             } 
         }
+
         Console.Write($"{']'}");
     }
 
