@@ -20,10 +20,24 @@
 
 */
 
+using System.Security.Cryptography.X509Certificates;
+
 internal class Program
 {
     private static void Main(string[] args)
     {
-        Console.WriteLine("Hello, World!");
+        Console.WriteLine("Введите слово");
+        string x = Console.ReadLine();
+        
+
+        if (x.Length <= 3) 
+        {
+            Console.WriteLine($"[{x}]");
+        }
+        else { Console.WriteLine($"[]"); }
+
+
+
     }
+
 }
