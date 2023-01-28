@@ -14,7 +14,7 @@
 
 Примеры:
 
-["Hello", "2", "world", *:-)"] > ["2", "5-)*]
+["Hello", "2", "world", ":-)"] > ["2", ":-)"]
 ['1234", "1567", "-2", "computer science"] -> ["-2"]
 ['Russia", "Denmark", "Kazan"] -> []
 
@@ -26,15 +26,17 @@ internal class Program
 {
     private static void Main(string[] args)
     {
-        Console.WriteLine("Введите слово");
-        string x = Console.ReadLine();      //Вводим слово с клавиатуры
+        string[] arr = new string[] {"Люк","Скайуокер","Пол","Уокер","Кот","Матроскин"};    //Завели массив
 
-
-        if (x.Length <= 3)                  //Проверяем условие
+        Console.Write($"{'['}");
+        for (int i = 0; i < arr.Length; i++)
         {
-            Console.WriteLine($"[{x}]");    //Выводим на экран если условие верно
+            if (arr[i].Length <= 3)
+            {
+                Console.Write($"{'"'}{arr[i]}{'"'} ");
+            } 
         }
-        else { Console.WriteLine($"[]"); }  //Выводим на экран если условие НЕ верно
+        Console.Write($"{']'}");
     }
 
 }
