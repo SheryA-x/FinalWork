@@ -27,17 +27,14 @@ internal class Program
     private static void Main(string[] args)
     {
         Console.WriteLine("Введите слово");
-        string x = Console.ReadLine();
-        
+        string x = Console.ReadLine();      //Вводим слово с клавиатуры
 
-        if (x.Length <= 3) 
+
+        if (x.Length <= 3)                  //Проверяем условие
         {
-            Console.WriteLine($"[{x}]");
+            Console.WriteLine($"[{x}]");    //Выводим на экран если условие верно
         }
-        else { Console.WriteLine($"[]"); }
-
-
-
+        else { Console.WriteLine($"[]"); }  //Выводим на экран если условие НЕ верно
     }
 
 }
