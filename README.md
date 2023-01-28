@@ -6,7 +6,7 @@
 2. Нарисовать блок схему алгоритма
 * https://disk.yandex.ru/i/Q1tjPSkiLB-25g
 3. Снабдить репозиторий оформаленным текстовым описанием решения (файл README.md)
-
+* https://github.com/SheryA-x/FinalWork/blob/master/README.md
 4. Написать программу, решающую задачу
 * https://github.com/SheryA-x/FinalWork/blob/master/FinalWork/FinalWork/Program.cs
 
